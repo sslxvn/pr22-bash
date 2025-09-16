@@ -1,0 +1,107 @@
+  <!DOCTYPE html>
+  <html lang="uk">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Linux: Основи та команди</title>
+      <link rel="stylesheet" href="../style/styles.css">
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link rel="stylesheet" href="css/reset.css"> 
+      <link rel="stylesheet" href="css/slick.css"> 
+      <link rel="stylesheet" href="css/jquery.fancybox.css"> 
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header>
+          <div class="container">
+              <h1>Операційна система GNU/Linux</h1>
+              <nav>
+                  <a href="#info">Інформація</a>
+                  <a href="#distros">Дистрибутиви</a>
+                  <a href="#commands">Команди CLI</a>
+                  <a href="#script">BASH-скрипт</a>
+                  <a href="#sources">Джерела</a>
+              </nav>
+          </div>
+      </header>
+  
+      <main>
+          <section id="info" class="section">
+              <div class="container">
+                  <h2>Коротка інформація</h2>
+                  <p>GNU/Linux — це вільна та відкрита операційна система, що поєднує ядро Linux та програмне забезпечення проекту GNU. Використовується на серверах, комп’ютерах, мобільних пристроях та вбудованих системах.</p>
+              </div>
+          </section>
+  
+          <section id="distros" class="section section-light">
+              <div class="container">
+                  <h2>Популярні дистрибутиви Linux</h2>
+                  <ul class="list">
+                      <li>Ubuntu</li>
+                      <li>Debian</li>
+                      <li>Fedora</li>
+                      <li>CentOS / Rocky Linux</li>
+                      <li>Arch Linux</li>
+                      <li>Linux Mint</li>
+                  </ul>
+              </div>
+          </section>
+  
+          <section id="commands" class="section">
+              <div class="container">
+                  <h2>Приклади команд Linux CLI</h2>
+                  <div class="commands-grid">
+                      <div><b>pwd</b> — показує поточну директорію</div>
+                      <div><b>echo</b> — виводить текст у термінал</div>
+                      <div><b>ls</b> — показує вміст директорії</div>
+                      <div><b>cd</b> — змінює директорію</div>
+                      <div><b>touch</b> — створює новий файл</div>
+                      <div><b>mkdir</b> — створює нову папку</div>
+                      <div><b>cp</b> — копіює файли або папки</div>
+                      <div><b>mv</b> — переміщує або перейменовує файли</div>
+                      <div><b>rm</b> — видаляє файли</div>
+                      <div><b>history</b> — показує історію команд</div>
+                  </div>
+              </div>
+          </section>
+  
+          <section id="script" class="section section-light">
+              <div class="container">
+                  <h2>BASH-скрипт авторизації</h2>
+                  <pre class="code">
+  #!/bin/bash
+  echo "Введіть ім'я користувача:"
+  read username
+  echo "Введіть пароль:"
+  read -s password
+  if [ "$username" = "admin" ] && [ "$password" = "1234" ]; then
+      echo "Авторизація успішна!"
+  else
+      echo "Невірне ім’я користувача або пароль"
+  fi
+                  </pre>
+              </div>
+          </section>
+  
+          <section id="sources" class="section">
+              <div class="container">
+                  <h2>Джерела інформації</h2>
+                  <ul class="list">
+                      <li><a href="https://www.linux.org/" target="_blank">Linux.org</a></li>
+                      <li><a href="https://www.gnu.org/" target="_blank">Проект GNU</a></li>
+                      <li><a href="https://ubuntu.com/" target="_blank">Ubuntu</a></li>
+                      <li><a href="https://www.debian.org/" target="_blank">Debian</a></li>
+                  </ul>
+              </div>
+          </section>
+      </main>
+  
+      <footer>
+          <div class="container">
+              <p>© 2025 Linux Learning Page</p>
+          </div>
+      </footer>
+  </body>
+  </html>
+  
